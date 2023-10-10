@@ -44,7 +44,7 @@ export default function Notes() {
     return (
         <div>
             <div className="notes">
-                {!!notes.length &&
+                {notes.length &&
                     notes.map((note) => <Note key={note.id} note={note} deleteNote={deleteNote} />)}
                 <CreateNote
                     textHandler={textHandler}
